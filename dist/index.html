@@ -18,7 +18,61 @@
 </style>
 
 </head>
+<script>
+  var bp = document.querySelector('#battery');
+console.log(document.getElementById("tr2").getElementsByTagName("td")[1].innerText == "true");
 
+var bp2 = document.querySelector('#battery-level-wrapper');
+var bp3 = document.querySelector('#battery-level');
+var bp4 = document.querySelector('#battery-level-cap');
+
+
+
+var img=document.querySelector('img');
+
+
+ 
+
+
+if (newFunction2()) {
+
+  bp.style.color = "green";
+  bp2.style.color = "green";
+  bp2.style.backgroundColor = "green";
+  bp3.style.color = 'green';
+  bp3.style.backgroundColor = "green";
+  bp4.style.color = 'green';
+  bp4.style.backgroundColor = "green";
+
+
+  img.style.display="block";  
+var timer=setInterval(function(){
+if(img.offsetLeft<=(document.body.clientWidth)){
+img.style.left=img.offsetLeft+10+'px';
+}else{
+    img.style.left=0+'px';
+}
+
+},30);   
+  
+ }
+  else{
+  bp.style.color = "gray";
+  bp2.style.color = "gray";
+  bp2.style.backgroundColor = "gray";
+  bp3.style.color = 'gray';
+  bp3.style.backgroundColor = "gray";
+  bp4.style.color = 'gray';
+  bp4.style.backgroundColor = "gray";
+ 
+ 
+ }
+ 
+ 
+ function newFunction2() {
+   return document.getElementById("tr2").getElementsByTagName("td")[1].innerText == "true";
+ }
+</script>
 <body>
 <!-- partial:index.partial.html -->
 <div id="log"></div>
