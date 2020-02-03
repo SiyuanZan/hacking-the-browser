@@ -1,0 +1,55 @@
+.no-show {
+  display: none;
+}
+#log {
+  border: 1px solid black;
+  padding: 0.25em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-height: 1em;
+}
+#log.error {
+  border: 3px solid red;
+}
+#log.warn {
+  border: 3px solid orange;
+}
+#clear-log {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#battery {
+  font-size: 0;
+    position: absolute;
+}
+#battery-level-wrapper {
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#battery-level {
+  width: 0;
+  background-color: black;
+  height: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 2px solid white;
+}
+#battery-level-cap {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 15px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-left: none;
+  background-color: black;
+  display: inline-block;
+}
